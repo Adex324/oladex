@@ -14,6 +14,7 @@ import work8 from "../src/assets/work8.jpg"
 import scissors from "../src/assets/scissors.png"
 import ig_icon from "../src/assets/ig.png";
 import whatsapp_icon from "../src/assets/whatsapp.png";
+import hero_img from "../src/assets/hero_img.jpeg";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -39,7 +40,7 @@ function App() {
       <section className="hero">
         <div className="hero-overlay"></div>
         <img
-          src="https://images.unsplash.com/photo-1667539916609-c706d5b7ed65?auto=format&fit=crop&w=1600&q=80"
+          src={hero_img}
           alt="Barber shop interior"
           className="hero-img"
         />

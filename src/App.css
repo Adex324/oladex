@@ -257,6 +257,7 @@ body, html, .app {
   .navbar-container {
     flex-direction: column;
     gap: 1.5rem;
+    justify-content: center;
   }
   .logo-text {
   font-size: 1.5rem;
@@ -319,7 +320,7 @@ body, html, .app {
   }
 
   .logo-text {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .hero-content h1 {
@@ -331,11 +332,11 @@ body, html, .app {
   }
 
   .about-text h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .about-text p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 
   .cta h2 {
@@ -349,7 +350,7 @@ body, html, .app {
   .btn-primary,
   .btn-outline {
     width: 100%;
-    font-size: 2rem;
+    font-size: 0.7rem;
     padding: 0.7rem;
   }
 
