@@ -267,19 +267,19 @@ body, html, .app {
   }
 
 
-  .navbar-container {
-    flex-direction: column;
-    gap: 1.5rem;
-    justify-content: center;
+   .navbar-container {
+    flex-direction: row; /* 🔧 Change from column to row */
+    gap: 1rem;
+    justify-content: space-between; /* 🔧 Keep logo left, button right */
   }
-  .logo-text {
-  font-size: 1.5rem;
-}
 
+  .logo-text {
+    font-size: 1.3rem;
+  }
 
   .btn-primary,
   .btn-outline {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 0.6rem 1.2rem;
   }
 
@@ -332,33 +332,31 @@ body, html, .app {
 
 /* --- Mobile (≤ 480px) --- */
 /* --- Mobile (≤ 480px) --- */
-@@media (max-width: 480px) {
+/* --- Mobile (≤ 480px) --- */
+@media (max-width: 480px) {
   .navbar {
-    padding: 1rem 1.5rem; /* 🔧 FIXED: same style as desktop but smaller padding */
+    padding: 1rem 1.5rem;
   }
 
   .navbar-container {
     display: flex;
-    flex-direction: row;        /* 🔧 FIXED: keep logo left, button right */
-    justify-content: space-between; /* 🔧 FIXED: maintain original alignment */
-    align-items: center;        /* 🔧 FIXED: vertically center both */
-    margin: 0 auto;             /* 🔧 keeps layout centered */
-    max-width: 100%;            /* 🔧 ensures it fits screen width */
+    flex-direction: row; /* 🔧 FIXED: Keep horizontal layout */
+    justify-content: space-between; /* 🔧 FIXED: Logo left, button right */
+    align-items: center;
+    max-width: 100%;
   }
 
- 
-   .navbar-logo {
+  .navbar-logo {
     display: flex;
     align-items: center;
-    gap: 0.4rem; /* 🔧 Small gap between scissors and text */
+    gap: 0.4rem;
   }
 
   .logo-text {
-    font-size: 1.2rem; /* 🔧 Slightly smaller for mobile */
+    font-size: 1.2rem;
     letter-spacing: 1px;
   }
 
-  /* Buttons on mobile navbar */
   .btn-outline {
     font-size: 1.1rem;
     padding: 0.4rem 1rem;
@@ -367,38 +365,36 @@ body, html, .app {
 
   /* Hero section adjustments */
   .hero-content h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .hero-content p {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
 
   /* About section */
   .about-text h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .about-text p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   /* CTA adjustments */
   .cta h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .cta p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   /* Buttons inside CTA */
   .btn-primary,
   .btn-outline {
-    width: auto; /* 🔧 Prevents full-width issue */
     font-size: 1rem;
     padding: 0.6rem 1.2rem;
-    align-self: center;
   }
 
   .cta-buttons {
@@ -409,8 +405,8 @@ body, html, .app {
 
   /* Social icons */
   .social_icons {
-    flex-direction: row;
     gap: 30px;
+    margin-top: 50px;
   }
 
   .ig_icon,
