@@ -314,48 +314,58 @@ body, html, .app {
 
 /* --- Mobile (≤ 480px) --- */
 /* --- Mobile (≤ 480px) --- */
-@media (max-width: 480px) {
-  .navbar-logo {
-    flex-direction: row;
-    gap: 0.25rem;
-  }
+@@media (max-width: 480px) {
   .navbar {
-  background: black;
-  color: white;
-  padding: 1rem 2rem;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 100;
-}
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
-}
+    padding: 1rem 1.5rem; /* 🔧 FIXED: same style as desktop but smaller padding */
+  }
+
+  .navbar-container {
+    display: flex;
+    flex-direction: row;        /* 🔧 FIXED: keep logo left, button right */
+    justify-content: space-between; /* 🔧 FIXED: maintain original alignment */
+    align-items: center;        /* 🔧 FIXED: vertically center both */
+    margin: 0 auto;             /* 🔧 keeps layout centered */
+    max-width: 100%;            /* 🔧 ensures it fits screen width */
+  }
+
+ 
+   .navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem; /* 🔧 Small gap between scissors and text */
+  }
 
   .logo-text {
-    font-size: 1rem;
+    font-size: 1.2rem; /* 🔧 Slightly smaller for mobile */
+    letter-spacing: 1px;
   }
 
+  /* Buttons on mobile navbar */
+  .btn-outline {
+    font-size: 1.1rem;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+  }
+
+  /* Hero section adjustments */
   .hero-content h1 {
     font-size: 4rem;
   }
 
   .hero-content p {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 
+  /* About section */
   .about-text h2 {
     font-size: 2rem;
   }
 
   .about-text p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
+  /* CTA adjustments */
   .cta h2 {
     font-size: 2rem;
   }
@@ -364,21 +374,22 @@ body, html, .app {
     font-size: 1rem;
   }
 
-  /* 🔧 FIXED: prevent Schedule Appointment button from spanning full width */
+  /* Buttons inside CTA */
   .btn-primary,
   .btn-outline {
-    width: auto;                     /* 🔧 FIXED: button takes only necessary width */
+    width: auto; /* 🔧 Prevents full-width issue */
     font-size: 1rem;
-    padding: 0.9rem 1.2rem;          /* 🔧 FIXED: slightly larger padding for balance */
-    align-self: center;              /* 🔧 FIXED: center button if in flex container */
+    padding: 0.6rem 1.2rem;
+    align-self: center;
   }
 
   .cta-buttons {
     flex-direction: column;
+    align-items: center;
     gap: 0.75rem;
-    align-items: center;             /* 🔧 FIXED: keep centered buttons */
   }
 
+  /* Social icons */
   .social_icons {
     flex-direction: row;
     gap: 30px;
@@ -390,6 +401,7 @@ body, html, .app {
     height: 25px;
   }
 
+  /* Footer text */
   .footer p {
     font-size: 1rem;
   }
