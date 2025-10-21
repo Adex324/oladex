@@ -250,9 +250,22 @@ body, html, .app {
 
 /* --- Tablets (≤ 768px) --- */
 @media (max-width: 768px) {
-  .navbar {
-    padding: 1.5rem 1.5rem;
+   .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* ✅ Keeps logo left, button right */
+    flex-direction: row !important; /* ✅ Prevents stacking */
   }
+
+  .navbar .logo {
+    font-size: 1.2rem; /* optional fine-tune */
+  }
+
+  .navbar .book-now {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
 
   .navbar-container {
     flex-direction: column;
@@ -276,6 +289,11 @@ body, html, .app {
 
   .hero-content p {
     font-size: 1.3rem;
+  }
+  .schedule-btn {
+    width: auto !important; /* ✅ Prevents it from stretching full width */
+    display: inline-block; /* ✅ Keeps it compact */
+    margin: 0 auto; /* Optional: centers it if needed */
   }
 
   .about {
