@@ -30,11 +30,11 @@ body, html, .app {
   gap: 0.5rem;
 }
 .scissors img {
-  width: 18px;          /* size of the scissors */
+  width: 18px;          
   height: 18px;
-  vertical-align: middle; /* aligns it properly with text */
-  filter: brightness(0) invert(1); /* makes it white if it's black */
-  margin: 0 4px;        /* optional spacing */
+  vertical-align: middle; 
+  filter: brightness(0) invert(1); 
+  margin: 0 4px;        
 }
 .logo-text {
   font-weight: 600;
@@ -194,10 +194,10 @@ body, html, .app {
 
 }
 .ig_icon, .whatsapp_icon{
-     width: 30px;          /* size of the scissors */
+     width: 30px;          
   height: 30px;
-  vertical-align: middle; /* aligns it properly with text */
-  filter: brightness(0) invert(1); /* makes it white if it's black */
+  vertical-align: middle; 
+  filter: brightness(0) invert(1);
   margin: 0 4px;   
 }
 
@@ -218,11 +218,7 @@ body, html, .app {
   margin-bottom: 1rem;
   
 }
-/* ========================= */
-/* 📱 Responsive Design */
-/* ========================= */
 
-/* --- Large Tablets & Small Laptops (≤ 1024px) --- */
 @media (max-width: 1024px) {
   .hero-content h1 {
     font-size: 6rem;
@@ -253,12 +249,12 @@ body, html, .app {
    .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* ✅ Keeps logo left, button right */
-    flex-direction: row !important; /* ✅ Prevents stacking */
+    justify-content: space-between; 
+    flex-direction: row !important; 
   }
 
   .navbar .logo {
-    font-size: 1.2rem; /* optional fine-tune */
+    font-size: 1.2rem; 
   }
 
   .navbar .book-now {
@@ -268,9 +264,9 @@ body, html, .app {
 
 
    .navbar-container {
-    flex-direction: row; /* 🔧 Change from column to row */
+    flex-direction: row; 
     gap: 1rem;
-    justify-content: space-between; /* 🔧 Keep logo left, button right */
+    justify-content: space-between; 
   }
 
   .logo-text {
@@ -291,9 +287,9 @@ body, html, .app {
     font-size: 1.3rem;
   }
   .schedule-btn {
-    width: auto !important; /* ✅ Prevents it from stretching full width */
-    display: inline-block; /* ✅ Keeps it compact */
-    margin: 0 auto; /* Optional: centers it if needed */
+    width: auto !important;
+    display: inline-block; 
+    margin: 0 auto; 
   }
 
   .about {
@@ -351,57 +347,57 @@ body, html, .app {
   }
 
   .logo-text {
-    font-size: 1.4rem; /* 🔧 Increased from 1.2rem */
+    font-size: 1.4rem; 
     letter-spacing: 1px;
   }
 
   .btn-outline {
-    font-size: 1.3rem; /* 🔧 Increased from 1.1rem */
-    padding: 0.5rem 1.1rem; /* 🔧 Slightly larger padding */
+    font-size: 1.3rem; 
+    padding: 0.5rem 1.1rem; 
     border-radius: 4px;
   }
 
   /* Hero section adjustments */
   .hero-content h1 {
-    font-size: 4.5rem; /* 🔧 Increased from 3.5rem */
+    font-size: 4.5rem;
   }
 
   .hero-content p {
-    font-size: 1.6rem; /* 🔧 Increased from 1.3rem */
+    font-size: 1.6rem; 
   }
 
   /* About section */
   .about-text h2 {
-    font-size: 2.2rem; /* 🔧 Increased from 1.8rem */
+    font-size: 2.2rem; 
   }
 
   .about-text p {
-    font-size: 1.5rem; /* 🔧 Increased from 1.2rem */
+    font-size: 1.5rem; 
   }
 
-  /* Gallery section */
+  
   .gallery h2 {
-    font-size: 2.2rem; /* 🔧 Added for consistency */
+    font-size: 2.2rem; 
   }
 
   .gallery p {
-    font-size: 1.5rem; /* 🔧 Added for consistency */
+    font-size: 1.5rem; 
   }
 
   /* CTA adjustments */
   .cta h2 {
-    font-size: 3rem; /* 🔧 Increased from 2.5rem */
+    font-size: 3rem; 
   }
 
   .cta p {
-    font-size: 1.5rem; /* 🔧 Increased from 1.2rem */
+    font-size: 1.5rem; 
   }
 
   /* Buttons inside CTA */
   .btn-primary,
   .btn-outline {
-    font-size: 1.3rem; /* 🔧 Increased from 1rem */
-    padding: 0.7rem 1.3rem; /* 🔧 Slightly larger padding */
+    font-size: 1.3rem; 
+    padding: 0.7rem 1.3rem; 
   }
 
   .cta-buttons {
@@ -418,13 +414,13 @@ body, html, .app {
 
   .ig_icon,
   .whatsapp_icon {
-    width: 28px; /* 🔧 Slightly larger */
-    height: 28px; /* 🔧 Slightly larger */
+    width: 28px; 
+    height: 28px; 
   }
 
-  /* Footer text */
+
   .footer p {
-    font-size: 1.2rem; /* 🔧 Increased from 1rem */
+    font-size: 1.2rem; 
   }
 }
 
