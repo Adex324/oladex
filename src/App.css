@@ -318,15 +318,8 @@ body, html, .app {
   .navbar-logo {
     flex-direction: row;
     gap: 0.25rem;
-    
   }
-.navbar{
-    display: flex;
-    flex-direction: column;          /* 🔧 FIXED: stack logo & button */
-    justify-content: center;         /* 🔧 FIXED: center vertically */
-    align-items: center;             /* 🔧 FIXED: center horizontally */
-    text-align: center;   
-}
+
   .navbar-container {
     display: flex;
     flex-direction: column;          /* 🔧 FIXED: stack logo & button */
