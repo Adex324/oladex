@@ -320,13 +320,18 @@ body, html, .app {
     gap: 0.25rem;
     
   }
-.navbar{
-    display: flex;
-    flex-direction: column;          /* 🔧 FIXED: stack logo & button */
-    justify-content: center;         /* 🔧 FIXED: center vertically */
-    align-items: center;             /* 🔧 FIXED: center horizontally */
-    text-align: center;   
-     padding: 2rem;
+
+   .navbar {
+  background: black;
+  color: white;
+  padding: 0rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:0 auto;
+}
 }
   .navbar-container {
     display: flex;
