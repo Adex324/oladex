@@ -370,7 +370,7 @@ body, html, .app {
   .btn-outline {
     width: auto;                     /* 🔧 FIXED: button takes only necessary width */
     font-size: 1rem;
-    padding: 0.5rem 1.2rem;          /* 🔧 FIXED: slightly larger padding for balance */
+    padding: 0.7rem 1.2rem;          /* 🔧 FIXED: slightly larger padding for balance */
     align-self: center;              /* 🔧 FIXED: center button if in flex container */
   }
 
