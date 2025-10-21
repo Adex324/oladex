@@ -1,0 +1,372 @@
+/* General */
+body, html, .app {
+  margin: 0;
+  padding: 0;
+  font-family: "caveat";
+  background: #f8f8f8;
+  color: #111;
+}
+
+/* Navbar */
+.navbar {
+  background: black;
+  color: white;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.scissors img {
+  width: 18px;          /* size of the scissors */
+  height: 18px;
+  vertical-align: middle; /* aligns it properly with text */
+  filter: brightness(0) invert(1); /* makes it white if it's black */
+  margin: 0 4px;        /* optional spacing */
+}
+.logo-text {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* Buttons */
+.btn-primary, .btn-outline {
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+  font-family: "caveat";
+}
+.btn-primary {
+  background: white;
+  color: black;
+  border-radius: 4px;
+}
+.btn-primary:hover {
+  background: #ddd;
+}
+.btn-outline {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.btn-outline.white:hover {
+  background: white;
+  color: black;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.hero-content {
+  z-index: 10;
+  color: white;
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 10rem;
+  letter-spacing: 5px;
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* About */
+.about {
+  background: white;
+  padding: 6rem 2rem;
+}
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: auto;
+}
+.about-text h2{
+    font-size: 2rem;
+}
+.about-text p {
+  color: #555;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Gallery */
+.gallery {
+  padding: 6rem 2rem;
+  background: #fafafa;
+}
+.gallery h2{
+    font-size: 2.5rem;
+}
+.gallery p{
+    font-size: 1.5rem;
+}
+.gallery-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.gallery-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.gallery-card {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.gallery-card:hover img {
+  transform: scale(1.1);
+}
+
+/* CTA */
+.cta {
+  background: black;
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.cta h2 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.cta p {
+  color: #ccc;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.social_icons{
+    display: flex;
+    justify-content: center;
+    gap:65px;
+    margin-top: 90px;
+
+}
+.ig_icon, .whatsapp_icon{
+     width: 30px;          /* size of the scissors */
+  height: 30px;
+  vertical-align: middle; /* aligns it properly with text */
+  filter: brightness(0) invert(1); /* makes it white if it's black */
+  margin: 0 4px;   
+}
+
+/* Footer */
+.footer {
+  background: #111;
+  color: #aaa;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  
+}
+/* ========================= */
+/* 📱 Responsive Design */
+/* ========================= */
+
+/* --- Large Tablets & Small Laptops (≤ 1024px) --- */
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 6rem;
+  }
+  .hero-content p {
+    font-size: 1.5rem;
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .about-image {
+    order: -1;
+  }
+  .about-text p {
+    font-size: 1.3rem;
+  }
+  .cta h2 {
+    font-size: 3.5rem;
+  }
+  .cta p {
+    font-size: 1.5rem;
+  }
+}
+
+/* --- Tablets (≤ 768px) --- */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .hero-content p {
+    font-size: 1.3rem;
+  }
+
+  .about {
+    padding: 4rem 1.5rem;
+  }
+
+  .gallery h2 {
+    font-size: 2rem;
+  }
+
+  .gallery p {
+    font-size: 1.2rem;
+  }
+
+  .cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .cta h2 {
+    font-size: 3rem;
+  }
+
+  .cta p {
+    font-size: 1.3rem;
+  }
+
+  .social_icons {
+    gap: 40px;
+    margin-top: 50px;
+  }
+
+  .footer {
+    font-size: 1.2rem;
+  }
+}
+
+/* --- Mobile (≤ 480px) --- */
+@media (max-width: 480px) {
+  .navbar-logo {
+    flex-direction: row;
+    gap: 0.25rem;
+  }
+
+  .logo-text {
+    font-size: 1.3rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .about-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-text p {
+    font-size: 1.1rem;
+  }
+
+  .cta h2 {
+    font-size: 2rem;
+  }
+
+  .cta p {
+    font-size: 1rem;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .social_icons {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .ig_icon,
+  .whatsapp_icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footer p {
+    font-size: 1rem;
+  }
+}
+
