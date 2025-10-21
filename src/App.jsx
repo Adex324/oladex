@@ -95,8 +95,8 @@ function App() {
         </div>
         <div className="gallery-grid">
           {[
-            work1,
             work2,
+            work1,
             work3,
             work4,
             work5,
