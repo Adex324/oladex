@@ -122,7 +122,7 @@ function App() {
           <button className="btn-primary">Book Appointment</button>
           </a>
           <a href="tel:+2347042701433">
-          <button className="btn-outline white">Call +234 704 270 1433</button>
+          <button className="btn-outline white">Call +234 807 130 5368</button>
           </a>
          
 
